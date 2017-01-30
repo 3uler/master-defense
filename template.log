@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.5.24)  16 JAN 2017 17:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.5.24)  29 JAN 2017 16:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -984,6 +984,39 @@ File: listings.cfg 2014/09/06 1.5e listings configuration
 ))
 Package: listings 2014/09/06 1.5e (Carsten Heinz)
 
+(/usr/local/texlive/2015/texmf-dist/tex/latex/mathtools/mathtools.sty
+Package: mathtools 2015/05/11 v1.16 mathematical typesetting tools
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count162
+\calc@Bcount=\count163
+\calc@Adimen=\dimen193
+\calc@Bdimen=\dimen194
+\calc@Askip=\skip57
+\calc@Bskip=\skip58
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count164
+\calc@Cskip=\skip59
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/mathtools/mhsetup.sty
+Package: mhsetup 2010/01/21 v1.2a programming setup (MH)
+)
+LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
+\g_MT_multlinerow_int=\count165
+\l_MT_multwidth_dim=\dimen195
+\origjot=\skip60
+\l_MT_shortvdotswithinadjustabove_dim=\dimen196
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen197
+\l_MT_above_intertext_sep=\dimen198
+\l_MT_below_intertext_sep=\dimen199
+\l_MT_above_shortintertext_sep=\dimen200
+\l_MT_below_shortintertext_sep=\dimen201
+)
 (/usr/local/texlive/2015/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
@@ -1005,8 +1038,8 @@ File: pgfmoduleplot.code.tex 2013/07/31  (rcs-revision 1.12)
 (/usr/local/texlive/2015/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version
 -0-65.sty
 Package: pgfcomp-version-0-65 2007/07/03 v3.0.0 (rcs-revision 1.7)
-\pgf@nodesepstart=\dimen193
-\pgf@nodesepend=\dimen194
+\pgf@nodesepstart=\dimen202
+\pgf@nodesepend=\dimen203
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version
 -1-18.sty
@@ -1025,14 +1058,14 @@ Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 ))
 (/usr/local/texlive/2015/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2015/05/04 v2.2 e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count162
+\etb@tempcnta=\count166
 )
 \tcb@titlebox=\box56
 \tcb@upperbox=\box57
 \tcb@lowerbox=\box58
 \tcb@phantombox=\box59
-\c@tcbbreakpart=\count163
-\c@tcblayer=\count164
+\c@tcbbreakpart=\count167
+\c@tcblayer=\count168
 \tcb@temp=\box60
 \tcb@temp=\box61
 \tcb@temp=\box62
@@ -1050,8 +1083,8 @@ Package: etoolbox 2015/05/04 v2.2 e-TeX tools for LaTeX (JAW)
 Package: pgffor 2013/12/13 v3.0.0 (rcs-revision 1.25)
 
 (/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
-\pgffor@iter=\dimen195
-\pgffor@skip=\dimen196
+\pgffor@iter=\dimen204
+\pgffor@skip=\dimen205
 \pgffor@stack=\toks48
 \pgffor@toks=\toks49
 ))
@@ -1062,37 +1095,159 @@ Package: tikz 2013/12/13 v3.0.0 (rcs-revision 1.142)
 (/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothan
 dlers.code.tex
 File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.0 (rcs-revision 1.20)
-\pgf@plot@mark@count=\count165
-\pgfplotmarksize=\dimen197
+\pgf@plot@mark@count=\count169
+\pgfplotmarksize=\dimen206
 )
-\tikz@lastx=\dimen198
-\tikz@lasty=\dimen199
-\tikz@lastxsaved=\dimen200
-\tikz@lastysaved=\dimen201
-\tikzleveldistance=\dimen202
-\tikzsiblingdistance=\dimen203
+\tikz@lastx=\dimen207
+\tikz@lasty=\dimen208
+\tikz@lastxsaved=\dimen209
+\tikz@lastysaved=\dimen210
+\tikzleveldistance=\dimen211
+\tikzsiblingdistance=\dimen212
 \tikz@figbox=\box64
 \tikz@figbox@bg=\box65
 \tikz@tempbox=\box66
 \tikz@tempbox@bg=\box67
-\tikztreelevel=\count166
-\tikznumberofchildren=\count167
-\tikznumberofcurrentchild=\count168
-\tikz@fig@count=\count169
+\tikztreelevel=\count170
+\tikznumberofchildren=\count171
+\tikznumberofcurrentchild=\count172
+\tikz@fig@count=\count173
 
 (/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.cod
 e.tex
 File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
-\pgfmatrixcurrentrow=\count170
-\pgfmatrixcurrentcolumn=\count171
-\pgf@matrix@numberofcolumns=\count172
+\pgfmatrixcurrentrow=\count174
+\pgfmatrixcurrentcolumn=\count175
+\pgf@matrix@numberofcolumns=\count176
 )
-\tikz@expandcount=\count173
+\tikz@expandcount=\count177
 
 (/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/tikzlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.0 (rcs-revision 1.2)
 )))
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibraryplotmarks.code.tex
+File: tikzlibraryplotmarks.code.tex 2008/01/09 v3.0.0 (rcs-revision 1.1)
+
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/libraries/pgflibraryplotmar
+ks.code.tex
+File: pgflibraryplotmarks.code.tex 2013/07/20 v3.0.0 (rcs-revision 1.13)
+))
+(/usr/local/texlive/2015/texmf-dist/tex/latex/pgfplots/pgfplots.sty
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgfplots/pgfplots.revision.tex)
+Package: pgfplots 2015/05/02 v1.12.1 Data Visualization (1.12.1)
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgfplots/pgfplots.code.tex
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgfplots/pgfplotscore.code.tex
+\t@pgfplots@toka=\toks50
+\t@pgfplots@tokb=\toks51
+\t@pgfplots@tokc=\toks52
+\pgfplots@tmpa=\dimen213
+\c@pgfplots@coordindex=\count178
+\c@pgfplots@scanlineindex=\count179
+
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgfplots/sys/pgfplotssysgeneric
+.code.tex))
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgfplots/libs/pgfplotslibrary.c
+ode.tex)
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplot
+soldpgfsupp_loader.code.tex
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/libraries/pgflibraryfpu.cod
+e.tex)
+Package pgfplots: loading complementary arithmetics for your pgf version...
+
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplot
+soldpgfsupp_pgflibraryfpu.code.tex)
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplot
+soldpgfsupp_pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count180
+)
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplot
+soldpgfsupp_trig_format.code.tex))
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.code
+.tex
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgfplots/liststructure/pgfplots
+liststructure.code.tex)
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgfplots/liststructure/pgfplots
+liststructureext.code.tex)
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgfplots/liststructure/pgfplots
+array.code.tex
+\c@pgfplotsarray@tmp=\count181
+)
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgfplots/liststructure/pgfplots
+matrix.code.tex)
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgfplots/numtable/pgfplotstable
+shared.code.tex
+\c@pgfplotstable@counta=\count182
+\t@pgfplotstable@a=\toks53
+)
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgfplots/liststructure/pgfplots
+deque.code.tex)
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.co
+de.tex
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.da
+ta.code.tex))
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.verb
+.code.tex)
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgfplots/libs/pgflibrarypgfplot
+s.surfshading.code.tex
+\c@pgfplotslibrarysurf@no=\count183
+
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgfplots/sys/pgflibrarypgfplots
+.surfshading.pgfsys-pdftex.def)))
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgfplots/util/pgfplotscolormap.
+code.tex
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgfplots/util/pgfplotscolor.cod
+e.tex))
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgfplots/pgfplotsstackedplots.c
+ode.tex)
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgfplots/pgfplotsplothandlers.c
+ode.tex
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgfplots/pgfplotsmeshplothandle
+r.code.tex))
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgfplots/pgfplots.scaling.code.
+tex)
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgfplots/pgfplotscoordprocessin
+g.code.tex)
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgfplots/pgfplots.errorbars.cod
+e.tex)
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgfplots/pgfplots.markers.code.
+tex)
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgfplots/pgfplotsticks.code.tex
+)
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgfplots/pgfplots.paths.code.te
+x)
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibrarydecorations.code.tex
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/modules/pgfmoduledecoration
+s.code.tex
+\pgfdecoratedcompleteddistance=\dimen214
+\pgfdecoratedremainingdistance=\dimen215
+\pgfdecoratedinputsegmentcompleteddistance=\dimen216
+\pgfdecoratedinputsegmentremainingdistance=\dimen217
+\pgf@decorate@distancetomove=\dimen218
+\pgf@decorate@repeatstate=\count184
+\pgfdecorationsegmentamplitude=\dimen219
+\pgfdecorationsegmentlength=\dimen220
+)
+\tikz@lib@dec@box=\box68
+)
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibrarydecorations.pathmorphing.code.tex
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/libraries/decorations/pgfli
+brarydecorations.pathmorphing.code.tex))
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibrarydecorations.pathreplacing.code.tex
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/libraries/decorations/pgfli
+brarydecorations.pathreplacing.code.tex))
+\pgfplots@numplots=\count185
+\pgfplots@xmin@reg=\dimen221
+\pgfplots@xmax@reg=\dimen222
+\pgfplots@ymin@reg=\dimen223
+\pgfplots@ymax@reg=\dimen224
+\pgfplots@zmin@reg=\dimen225
+\pgfplots@zmax@reg=\dimen226
+))
 (/usr/local/texlive/2015/texmf-dist/tex/latex/was/upgreek.sty
 Package: upgreek 2003/02/12 v2.0 (WaS)
 Package upgreek Info: Using Euler Roman for upright Greek on input line 31.
@@ -1105,11 +1260,11 @@ Package: dsfont 1995/08/01 v0.1 Double stroke roman fonts
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/framed/framed.sty
 Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
-\OuterFrameSep=\skip57
-\fb@frw=\dimen204
-\fb@frh=\dimen205
-\FrameRule=\dimen206
-\FrameSep=\dimen207
+\OuterFrameSep=\skip61
+\fb@frw=\dimen227
+\fb@frh=\dimen228
+\FrameRule=\dimen229
+\FrameSep=\dimen230
 )
 (./metricsbeamer.sty
 (/usr/local/texlive/2015/texmf-dist/tex/latex/beamer/themes/font/beamerfontthem
@@ -1118,133 +1273,133 @@ Package: beamerfontthemeserif 2010/06/17  (rcs-revision d02a7cf4d8ae)
 ))
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<let>-command' on input line 68.
+(hyperref)                removing `\<let>-command' on input line 71.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 68.
+(hyperref)                removing `\\' on input line 71.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<def>-command' on input line 68.
+(hyperref)                removing `\<def>-command' on input line 71.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\reserved@a' on input line 68.
+(hyperref)                removing `\reserved@a' on input line 71.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<def>-command' on input line 68.
+(hyperref)                removing `\<def>-command' on input line 71.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\reserved@b' on input line 68.
+(hyperref)                removing `\reserved@b' on input line 71.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<let>-command' on input line 68.
+(hyperref)                removing `\<let>-command' on input line 71.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<let>-command' on input line 68.
+(hyperref)                removing `\<let>-command' on input line 71.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\reserved@c' on input line 68.
+(hyperref)                removing `\reserved@c' on input line 71.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<def>-command' on input line 68.
+(hyperref)                removing `\<def>-command' on input line 71.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\beamer@temp' on input line 68.
+(hyperref)                removing `\beamer@temp' on input line 71.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<def>-command' on input line 68.
+(hyperref)                removing `\<def>-command' on input line 71.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\insertinstitute' on input line 68.
+(hyperref)                removing `\insertinstitute' on input line 71.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<def>-command' on input line 68.
+(hyperref)                removing `\<def>-command' on input line 71.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\beamer@shortinstitute' on input line 68.
+(hyperref)                removing `\beamer@shortinstitute' on input line 71.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<def>-command' on input line 68.
+(hyperref)                removing `\<def>-command' on input line 71.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\beamer@temp' on input line 68.
+(hyperref)                removing `\beamer@temp' on input line 71.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<def>-command' on input line 68.
+(hyperref)                removing `\<def>-command' on input line 71.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\insertinstitute' on input line 68.
+(hyperref)                removing `\insertinstitute' on input line 71.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<def>-command' on input line 68.
+(hyperref)                removing `\<def>-command' on input line 71.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\beamer@shortinstitute' on input line 68.
+(hyperref)                removing `\beamer@shortinstitute' on input line 71.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\@flushglue' on input line 68.
+(hyperref)                removing `\@flushglue' on input line 71.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\leftskip' on input line 68.
+(hyperref)                removing `\leftskip' on input line 71.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\@flushglue' on input line 68.
+(hyperref)                removing `\@flushglue' on input line 71.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\parindent' on input line 68.
+(hyperref)                removing `\parindent' on input line 71.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\z@' on input line 68.
+(hyperref)                removing `\z@' on input line 71.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\parfillskip' on input line 68.
+(hyperref)                removing `\parfillskip' on input line 71.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\z@skip' on input line 68.
+(hyperref)                removing `\z@skip' on input line 71.
 
 (./template.aux)
 \openout1 = `template.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1282,17 +1437,17 @@ LaTeX Font Info:    ... okay on input line 68.
 
 (/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count174
-\scratchdimen=\dimen208
-\scratchbox=\box68
-\nofMPsegments=\count175
-\nofMParguments=\count176
-\everyMPshowfont=\toks50
-\MPscratchCnt=\count177
-\MPscratchDim=\dimen209
-\MPnumerator=\count178
-\makeMPintoPDFobject=\count179
-\everyMPtoPDFconversion=\toks51
+\scratchcounter=\count186
+\scratchdimen=\dimen231
+\scratchbox=\box69
+\nofMPsegments=\count187
+\nofMParguments=\count188
+\everyMPshowfont=\toks54
+\MPscratchCnt=\count189
+\MPscratchDim=\dimen232
+\MPnumerator=\count190
+\makeMPintoPDFobject=\count191
+\everyMPtoPDFconversion=\toks55
 ) (/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
@@ -1309,8 +1464,8 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 ABD: EveryShipout initializing macros
-\AtBeginShipoutBox=\box69
-Package hyperref Info: Link coloring OFF on input line 68.
+\AtBeginShipoutBox=\box70
+Package hyperref Info: Link coloring OFF on input line 71.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -1318,11 +1473,11 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count180
+\c@section@level=\count192
 )
-LaTeX Info: Redefining \ref on input line 68.
-LaTeX Info: Redefining \pageref on input line 68.
-LaTeX Info: Redefining \nameref on input line 68.
+LaTeX Info: Redefining \ref on input line 71.
+LaTeX Info: Redefining \pageref on input line 71.
+LaTeX Info: Redefining \nameref on input line 71.
 
 (./template.out) (./template.out)
 \@outlinefile=\write7
@@ -1353,19 +1508,25 @@ Dictionary: translator-numbers-dictionary, Language: English
 r-theorem-dictionary/translator-theorem-dictionary-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
 )
-LaTeX Info: Redefining \includegraphics on input line 68.
-\c@lstlisting=\count181
+LaTeX Info: Redefining \includegraphics on input line 71.
+\c@lstlisting=\count193
+
+
+Package pgfplots Warning: running in backwards compatibility mode (unsuitable t
+ick labels; missing features). Consider writing \pgfplotsset{compat=1.12} into 
+your preamble.
+ on input line 71.
 
 (./template.nav)
-LaTeX Font Info:    Try loading font information for U+msa on input line 68.
+LaTeX Font Info:    Try loading font information for U+msa on input line 71.
  (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 68.
+LaTeX Font Info:    Try loading font information for U+msb on input line 71.
  (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Overfull \hbox (2.13672pt too wide) detected at line 68
+Overfull \hbox (2.13672pt too wide) detected at line 71
   []  
  []
 
@@ -1375,7 +1536,7 @@ Overfull \hbox (2.13672pt too wide) detected at line 68
 o.pdf>]
 
 LaTeX Font Warning: Font shape `T1/cmss/m/n' in size <4> not available
-(Font)              size <5> substituted on input line 97.
+(Font)              size <5> substituted on input line 101.
 
 
 Overfull \hbox (2.13672pt too wide) has occurred while \output is active
@@ -1412,10 +1573,10 @@ Overfull \hbox (2.13672pt too wide) has occurred while \output is active
 
 [6
 
-] <W_cusp.png, id=99, 315.8199pt x 193.32225pt>
+] <W_cusp.png, id=107, 315.8199pt x 193.32225pt>
 File: W_cusp.png Graphic file (type png)
  <use W_cusp.png>
-Package pdftex.def Info: W_cusp.png used on input line 218.
+Package pdftex.def Info: W_cusp.png used on input line 224.
 (pdftex.def)             Requested size: 245.83282pt x 150.48396pt.
 
 Overfull \hbox (2.13672pt too wide) has occurred while \output is active
@@ -1424,14 +1585,14 @@ Overfull \hbox (2.13672pt too wide) has occurred while \output is active
 
 [7
 
- <./W_cusp.png>] <cusp_anom.png, id=113, 443.0151pt x 311.4837pt>
+ <./W_cusp.png>] <cusp_anom.png, id=121, 443.0151pt x 311.4837pt>
 File: cusp_anom.png Graphic file (type png)
 
 <use cusp_anom.png>
-Package pdftex.def Info: cusp_anom.png used on input line 218.
+Package pdftex.def Info: cusp_anom.png used on input line 224.
 (pdftex.def)             Requested size: 219.7114pt x 154.48196pt.
 
-Overfull \vbox (11.71033pt too high) detected at line 218
+Overfull \vbox (11.71033pt too high) detected at line 224
  []
 
 
@@ -1448,19 +1609,19 @@ Overfull \hbox (2.13672pt too wide) has occurred while \output is active
 
 [9
 
-] <feynm.png, id=132, 337.5009pt x 183.5658pt>
+] <feynm.png, id=140, 337.5009pt x 183.5658pt>
 File: feynm.png Graphic file (type png)
  <use feynm.png>
-Package pdftex.def Info: feynm.png used on input line 281.
+Package pdftex.def Info: feynm.png used on input line 287.
 (pdftex.def)             Requested size: 50.62294pt x 27.53368pt.
 
-<AdS_S.png, id=133, 470.11635pt x 164.0529pt>
+<AdS_S.png, id=141, 470.11635pt x 164.0529pt>
 File: AdS_S.png Graphic file (type png)
  <use AdS_S.png>
-Package pdftex.def Info: AdS_S.png used on input line 281.
+Package pdftex.def Info: AdS_S.png used on input line 287.
 (pdftex.def)             Requested size: 70.5144pt x 24.60686pt.
 
-Overfull \hbox (29.11731pt too wide) in paragraph at lines 281--281
+Overfull \hbox (29.11731pt too wide) in paragraph at lines 287--287
 [][] 
  []
 
@@ -1472,15 +1633,15 @@ Overfull \hbox (2.13672pt too wide) has occurred while \output is active
 [10
 
  <./feynm.png> <./AdS_S.png>]
-Overfull \hbox (3.78275pt too wide) in paragraph at lines 345--345
+Overfull \hbox (3.78275pt too wide) in paragraph at lines 351--351
  []\T1/cmss/bx/n/10.95 AdS/CFT 
  []
 
-<Wilson_loop_worldsheet1.png, id=146, 1726.45pt x 1055.945pt>
+<Wilson_loop_worldsheet1.png, id=154, 1726.45pt x 1055.945pt>
 File: Wilson_loop_worldsheet1.png Graphic file (type png)
 
 <use Wilson_loop_worldsheet1.png>
-Package pdftex.def Info: Wilson_loop_worldsheet1.png used on input line 345.
+Package pdftex.def Info: Wilson_loop_worldsheet1.png used on input line 351.
 (pdftex.def)             Requested size: 157.0235pt x 96.0299pt.
 
 Overfull \hbox (2.13672pt too wide) has occurred while \output is active
@@ -1490,15 +1651,15 @@ Overfull \hbox (2.13672pt too wide) has occurred while \output is active
 [11
 
  <./Wilson_loop_worldsheet1.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 381--381
+Underfull \hbox (badness 10000) in paragraph at lines 387--387
 
  []
 
-<cusp_worldsheet_vec.png, id=157, 431.09055pt x 339.30765pt>
+<cusp_worldsheet_vec.png, id=165, 431.09055pt x 339.30765pt>
 File: cusp_worldsheet_vec.png Graphic file (type png)
 
 <use cusp_worldsheet_vec.png>
-Package pdftex.def Info: cusp_worldsheet_vec.png used on input line 381.
+Package pdftex.def Info: cusp_worldsheet_vec.png used on input line 387.
 (pdftex.def)             Requested size: 129.06366pt x 101.58597pt.
 
 Overfull \hbox (2.13672pt too wide) has occurred while \output is active
@@ -1517,15 +1678,15 @@ Overfull \hbox (2.13672pt too wide) has occurred while \output is active
 ]
 File: cusp_worldsheet_vec.png Graphic file (type png)
  <use cusp_worldsheet_vec.png>
-Package pdftex.def Info: cusp_worldsheet_vec.png used on input line 441.
+Package pdftex.def Info: cusp_worldsheet_vec.png used on input line 453.
 (pdftex.def)             Requested size: 153.64493pt x 120.93396pt.
 
-Overfull \hbox (20.40031pt too wide) in paragraph at lines 441--441
+Overfull \hbox (20.40031pt too wide) in paragraph at lines 453--453
  [] 
  []
 
 
-Overfull \vbox (14.11685pt too high) detected at line 441
+Overfull \vbox (14.11685pt too high) detected at line 453
  []
 
 
@@ -1543,12 +1704,12 @@ Overfull \hbox (2.13672pt too wide) has occurred while \output is active
 [15
 
 ]
-LaTeX Font Info:    Try loading font information for U+dsrom on input line 480.
+LaTeX Font Info:    Try loading font information for U+dsrom on input line 492.
 
  (/usr/local/texlive/2015/texmf-dist/tex/latex/doublestroke/Udsrom.fd
 File: Udsrom.fd 1995/08/01 v0.1 Double stroke roman font definitions
 )
-Overfull \hbox (47.14384pt too wide) in paragraph at lines 480--480
+Overfull \hbox (47.14384pt too wide) in paragraph at lines 492--492
 []  
  []
 
@@ -1560,7 +1721,7 @@ Overfull \hbox (2.13672pt too wide) has occurred while \output is active
 [16
 
 ]
-Overfull \vbox (4.82195pt too high) detected at line 506
+Overfull \vbox (4.82195pt too high) detected at line 518
  []
 
 
@@ -1571,22 +1732,22 @@ Overfull \hbox (2.13672pt too wide) has occurred while \output is active
 [17
 
 ]
-Overfull \hbox (12.81332pt too wide) in paragraph at lines 560--560
+Overfull \hbox (12.81332pt too wide) in paragraph at lines 572--572
 []$[]$ 
  []
 
 
-Overfull \hbox (8.73091pt too wide) in paragraph at lines 560--560
+Overfull \hbox (12.78021pt too wide) in paragraph at lines 572--572
  []
  []
 
 
-Underfull \hbox (badness 1735) in paragraph at lines 560--560
+Underfull \hbox (badness 1735) in paragraph at lines 572--572
 \T1/cmss/m/n/10.95 treat-able via MC tech-
  []
 
 
-Overfull \vbox (5.20845pt too high) detected at line 560
+Overfull \vbox (5.20845pt too high) detected at line 572
  []
 
 
@@ -1595,6 +1756,116 @@ Overfull \hbox (2.13672pt too wide) has occurred while \output is active
  []
 
 [18
+
+]
+Overfull \hbox (17.78062pt too wide) in paragraph at lines 630--630
+[]$[]$  
+ []
+
+
+Overfull \vbox (4.78093pt too high) detected at line 630
+ []
+
+
+Overfull \hbox (2.13672pt too wide) has occurred while \output is active
+  []  
+ []
+
+[19
+
+]
+Overfull \hbox (6.4946pt too wide) in paragraph at lines 630--630
+ []$ 
+ []
+
+<markov.png, id=242, 560.45386pt x 242.8272pt>
+File: markov.png Graphic file (type png)
+ <use markov.png>
+Package pdftex.def Info: markov.png used on input line 630.
+(pdftex.def)             Requested size: 399.47777pt x 173.08286pt.
+
+Overfull \vbox (22.3053pt too high) detected at line 630
+ []
+
+
+Overfull \hbox (2.13672pt too wide) has occurred while \output is active
+  []  
+ []
+
+[20
+
+ <./markov.png>]
+Overfull \hbox (2.13672pt too wide) has occurred while \output is active
+  []  
+ []
+
+[21
+
+]
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 721.
+
+
+Overfull \vbox (22.77322pt too high) detected at line 721
+ []
+
+
+Overfull \hbox (2.13672pt too wide) has occurred while \output is active
+  []  
+ []
+
+[22
+
+]
+
+LaTeX Font Warning: Command \huge invalid in math mode on input line 747.
+
+
+LaTeX Font Warning: Command \huge invalid in math mode on input line 747.
+
+(./plot_coshcorr.tex) (./mx_vs_g_Lm4_2.tex)
+Overfull \hbox (21.92586pt too wide) in paragraph at lines 140--747
+[][] 
+ []
+
+
+Overfull \hbox (21.10326pt too wide) in paragraph at lines 140--747
+[] 
+ []
+
+[23
+
+] (./c_fit.tex) (./Slat-c_fix.tex)
+Overfull \hbox (6.44333pt too wide) in paragraph at lines 168--780
+ [] 
+ []
+
+[24
+
+] (./Slat-c_g.tex) [25
+
+] (./f_prime_Lm4_andLm6.tex) [26
+
+]
+Overfull \hbox (2.13672pt too wide) has occurred while \output is active
+  []  
+ []
+
+[27
+
+]
+Overfull \hbox (2.13672pt too wide) has occurred while \output is active
+  []  
+ []
+
+[28
+
+]
+Overfull \hbox (2.13672pt too wide) has occurred while \output is active
+  []  
+ []
+
+[29
 
 ]
 \tf@nav=\write8
@@ -1606,72 +1877,77 @@ Overfull \hbox (2.13672pt too wide) has occurred while \output is active
 \tf@snm=\write10
 \openout10 = `template.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 562.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 562.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 850.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 850.
  (./template.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 562.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 562.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 850.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 850.
 Package rerunfilecheck Info: File `template.out' has not changed.
-(rerunfilecheck)             Checksum: 50149D73263D9AD279093FAD3A1EF43C;309.
+(rerunfilecheck)             Checksum: 69833789B6C8AF806581914F1A4025E3;396.
 
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 562.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 850.
  )
-(\end occurred when \unless\ifcsname on line 68 was incomplete) 
+(\end occurred when \unless\ifcsname on line 71 was incomplete) 
 Here is how much of TeX's memory you used:
- 23857 strings out of 493089
- 460606 string characters out of 6134842
- 548868 words of memory out of 5000000
- 26724 multiletter control sequences out of 15000+600000
- 34550 words of font info for 106 fonts, out of 8000000 for 9000
+ 34379 strings out of 493089
+ 794113 string characters out of 6134842
+ 1467585 words of memory out of 5000000
+ 37054 multiletter control sequences out of 15000+600000
+ 36865 words of font info for 109 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 56i,18n,75p,944b,787s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 66i,23n,112p,944b,2614s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texl
 ive/2015/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/local/texliv
 e/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb></usr/local/texliv
 e/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive
 /2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/
 2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2
-015/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/local/texliv
-e/2015/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex9.pfb></usr/local/tex
-live/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texl
-ive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texliv
-e/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/
-2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/20
-15/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2015
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2015/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2015/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2015/texmf
--dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2015/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2015/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2015/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2015/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2015/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmti10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmti8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/do
-ublestroke/dsrom10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/d
-oublestroke/dsrom8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/a
-msfonts/symbols/msam10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/publ
-ic/cm-super/sfsi1095.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public
-/cm-super/sfss0900.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/c
-m-super/sfss1000.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-
-super/sfss1095.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-su
-per/sfss1200.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-supe
-r/sfsx1095.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/
-sfsx1200.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sf
-sx1440.pfb>
-Output written on template.pdf (18 pages, 2040377 bytes).
+015/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pfb></usr/local/texliv
+e/2015/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/local/tex
+live/2015/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex9.pfb></usr/local/
+texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/t
+exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/tex
+live/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texli
+ve/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive
+/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2
+015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/201
+5/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2015/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2015/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2015/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2015/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2015/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2015/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2015/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2015/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmti10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmti7.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmti8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/dou
+blestroke/dsrom10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/do
+ublestroke/dsrom8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/am
+sfonts/symbols/msam10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/publi
+c/cm-super/sfsi1095.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/
+cm-super/sfss0800.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm
+-super/sfss0900.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-s
+uper/sfss1000.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-sup
+er/sfss1095.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super
+/sfss1200.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/s
+fsx1095.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfs
+x1200.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfsx1
+440.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfsx248
+8.pfb>
+Output written on template.pdf (29 pages, 2461206 bytes).
 PDF statistics:
- 352 PDF objects out of 1000 (max. 8388607)
- 270 compressed objects within 3 object streams
- 44 named destinations out of 1000 (max. 500000)
- 131 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 458 PDF objects out of 1000 (max. 8388607)
+ 357 compressed objects within 4 object streams
+ 68 named destinations out of 1000 (max. 500000)
+ 152 words of extra memory for PDF output out of 10000 (max. 10000000)
 

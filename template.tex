@@ -11,9 +11,12 @@
 \usepackage{amssymb}
 \usepackage{amsmath}
 \usepackage{amsfonts}
+\usepackage{mathtools}
 \usepackage{ifthen}
 \usepackage{tcolorbox}
 \usepackage{tikz}
+\usetikzlibrary{plotmarks}
+\usepackage{pgfplots}
 \usepackage{upgreek}
 \usepackage{dsfont}
 \usepackage{framed, color}
@@ -92,6 +95,7 @@ Study the \textcolor{blue!90}{AdS/CFT duality} \textcolor{blue!95!black}{numeric
 \item<2-> AdS/CFT duality
 \item<2-> String theory framework
 \item<2-> Numerical approach
+\item<2-> Results and conclusion
 \end{itemize}
 
 }
@@ -114,7 +118,8 @@ Study the \textcolor{blue!90}{AdS/CFT duality} \textcolor{blue!95!black}{numeric
 \item measure scaling dimensions of local operators and Wilson loops
 \end{itemize}
 \item<3-> Twist two operators:\\
-scaling dimension $\Delta_{S} = 2+S+ \gamma_{S}$
+scaling dimension $\Delta_{S} = 2+S+ \gamma_{S}$\\
+twist \hspace{19mm} $\Delta_{S}-S = 2+ \gamma_{S}$
 \end{itemize}
 }
 
@@ -210,7 +215,8 @@ via cusp anomaly function
 %
 %
 \begin{minipage}{0.3\linewidth}
-Here ${\color{blue}g} \equiv \frac{\sqrt{\lambda}}{4\pi} $ \\[2mm]
+Here ${\color{blue}g} \equiv \frac{\sqrt{\lambda}}{4\pi} $ \\[3mm]
+t'Hooft coupling\\[2mm]
 $\lambda = g_{\rm YM}^{2}N = \frac{R^{4}}{\alpha'^{2}}$
 
 \end{minipage}
@@ -351,7 +357,7 @@ $\!\!Z_{\rm string}[\mathcal{C}]\!=\! \int \mathcal{D}X\mathcal{D}h\, e^{-S_{\rm
 \begin{minipage}{0.6\linewidth}
 vev of light-like cusped Wilson loop\\
 \begin{tcolorbox}[colback=white!95!black, colframe=white!90!black]
-$\langle\mathcal{W}[\mathcal{C}_{\rm cusp}]\rangle \sim e^{\frac{f(g)}{2}\vert\phi\vert \ln \frac{L}{\epsilon}}$
+$\langle\mathcal{W}[\mathcal{C}_{\rm cusp}]\rangle \sim e^{-\frac{f(g)}{2}\vert\phi\vert \ln \frac{L}{\epsilon}}$
 \end{tcolorbox}
 \end{minipage}
 %
@@ -389,13 +395,19 @@ String partition function with cusp vacuum $\left( V_{2}=\int {\rm d}t{\rm d}s \
 
 \begin{itemize}
 \item Sigma-model in $AdS_{5}\times S^{5}$ with RR flux\vspace{2mm}
-$S = g \int \dd\tau \dd \sigma\,\left[ G_{\mu\nu} \del X^{\mu} \del X^{\nu} + \bar{\!\mathit{\Theta}} \Gamma (D+F_{5}) \mathit{\Theta}\del X + \ldots \right]$\vspace{1mm}
+$S = g \int \dd\tau \dd \sigma\,\left[ G \del X \cdot \del X + \bar{\!\mathit{\Theta}} \Gamma (D+F_{5}) \mathit{\Theta}\del X + \ldots \right]$
+\vspace{1mm}
 \begin{flushright}
 \footnotesize [Metsaev Tseytlin 1998]
 \end{flushright}
+%
+\begin{itemize}
+\item $X^{\mu}$ - coordinates of 10d target space
+\item $\mathit{\Theta}^{1},\, \mathit{\Theta}^{2}$ - anti-commuting Majorana spinors
+\end{itemize}
 
 \item Fix $\kappa$-symmetry and apply bosonic light-cone gauge \\
-$\Rightarrow$ action at most quartic in complex Grassmann fields $\theta^{i}, \eta^{i}$
+$\Rightarrow$ action at most quartic in complex Grassmann fields $\theta^{i}, \eta^{i}$ (inherited from $\mathit{\Theta}$)
 
 \end{itemize}
 }
@@ -523,12 +535,12 @@ discretise the worldsheet with const. lattice spacing $a$ \\
 \begin{tikzpicture}[scale=1.1]
 %flat grid
 \draw (-1,-1) rectangle (1,1);
-\path (-1,-1) -- node[below]{$\tau$} (1,-1);
-\path (-1,-1) -- node[left]{$\sigma$} (-1,1);
+\path (-1,-1) -- node[below]{$t$} (1,-1);
+\path (-1,-1) -- node[left]{$s$} (-1,1);
 \draw [step=0.5cm,dashed] (-1,-1) grid (1,1);
-\node [anchor=north] at (-1,-1.0) {\tiny $(0,0)$};
-\node [anchor=north] at (1,-1.0) {\tiny $(T-1,0)$};
-\node [anchor=south] at (-1,1.0) {\tiny $(0,L-1)$};
+\node [anchor=north] at (-1,-1.0) {\tiny $a(0,0)$};
+\node [anchor=north] at (1,-1.0) {\tiny $a(T-1,0)$};
+\node [anchor=south] at (-1,1.0) {\tiny $a(0,L-1)$};
 \path (0,0) circle (0.6pt) node[below=2pt, fill=white]{\tiny $(an_{0},an_{1})$};
 \foreach \x in {-1,-0.5,...,1}{
 	\foreach \y in {-1,-0.5,...,1}{
@@ -552,11 +564,287 @@ discretise the worldsheet with const. lattice spacing $a$ \\
 \end{itemize}\hfill
 %\vspace{2mm}
 \begin{minipage}{0.6\linewidth}
-$\Rightarrow Z_{\rm disc} = \int \prod\limits_{n} \dd\phi(n)\; e^{-S_{\rm disc}[\phi|}\quad\sim$
+$\Rightarrow Z_{\rm disc} = \int \prod\limits_{n} \dd\phi(n)\; e^{-S_{\rm disc}[\phi]}\quad\sim$
 \end{minipage} 
 \begin{minipage}{0.38\linewidth}
 multidimensional integral treatable via MC techniques
 \end{minipage}
+\end{frame}
+
+%#########################################################
+
+\begin{frame}
+\frametitle{Monte Carlo simulations in QFT}
+
+\only<1>{
+generate {\color{blue!90}ensemble} of field configurations $\lbrace \phi_{1},\ldots,\phi_{N}\rbrace$ distributed according $P[\phi]=e^{-S_{\rm E}[\phi]}/Z$\\[3mm]
+{\color{hublue}\bf Ensemble average}
+\begin{tcolorbox}[colback=white!95!black, colframe=white!90!black]
+\begin{center}
+\vspace{-2mm}
+{\small $\langle A \rangle = \int \mathcal{D}\phi\, A[\phi] P[\phi] = \frac{1}{N}\sum\limits_{i=1}^{N}A[\phi_{i}] + \mathcal{O}(1/\sqrt{N}) $}
+\vspace{-2mm}
+\end{center}
+\end{tcolorbox}
+%
+%
+%
+\begin{itemize}
+\item Grassmann fields are integrated out\\
+{\small ${\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\int \mathcal{D}\mathit{\Psi}\, e^{-\mathit{\Psi}^{\rm T}\hat{\mathcal{O}}_{\rm F}\mathit{\Psi}} \sim \sqrt{\det \hat{\mathcal{O}}_{\rm F}} \quad{\color{red} \xrightarrow{!}}\quad \sqrt[4]{\det (\hat{\mathcal{O}}_{\rm F}\hat{\mathcal{O}}_{\rm F}^{\dagger})} \sim \int \mathcal{D}\zeta\mathcal{D}\zeta^{\dagger}\, e^{-\zeta^{\dagger}(\hat{\mathcal{O}}_{\rm F}\hat{\mathcal{O}}_{\rm F}^{\dagger})^{-\frac{1}{4}}\zeta}}$}
+\item Pseudofermionic contribution included into $P[\phi]$
+\item Include Wilson term to overcome fermion doubling
+\item Use rational hybrid Monte Carlo (RHMC) algorithm to generate ensembles
+\end{itemize}
+}
+%
+\only<2>{
+generate {\color{blue!90}ensemble} of field configurations $\lbrace \phi_{1},\ldots,\phi_{N}\rbrace$ distributed according $P[\phi]=e^{-S_{\rm E}[\phi]}/\tilde{Z}\cdot \sqrt{\det \hat{\mathcal{O}}_{\rm F}}$\\[3mm]
+{\color{hublue}\bf Ensemble average}
+\begin{tcolorbox}[colback=white!95!black, colframe=white!90!black]
+\begin{center}
+\vspace{-2mm}
+{\small ${\langle S_{\rm cusp} \rangle = \int \mathcal{D}\phi\mathcal{D}\zeta\mathcal{D}\zeta^{\dagger}\, S_{\rm cusp}[\phi] P[\phi] = \frac{1}{N}\sum\limits_{i=1}^{N}S_{\rm cusp}[\phi_{i}] + \mathcal{O}(1/\sqrt{N}) }$}
+\vspace{-2mm}
+\end{center}
+\end{tcolorbox}
+%
+%
+%
+\begin{center}
+\begin{tikzpicture}[thick,scale=0.9, every node/.style={scale=0.5}]
+\node[anchor=south west,inner sep=0] (image) at (0,0) {\includegraphics[width=1.3\textwidth]{markov.png}};
+\begin{scope}[x={(image.south east)},y={(image.north west)}]
+%\node [anchor=north] at (0.6,0.37) {$\mathcal{C}_{\rm cusp}$};
+\node [anchor=south] at (0.74,0.89) {$z$};
+\node [anchor=south] at (0.46,0.7) {$\phi_{i}$};
+\node [anchor=east] at (0.68,0.65) {$x^{+}$};
+\node [anchor=west] at (0.95,0.53) {$x^{-}$};
+%\draw[help lines,xstep=.1,ystep=.1] (0,0) grid (1,1);
+%\foreach \x in {0,1,...,9} { \node [anchor=north] at (\x/10,0) {0.\x}; }
+%\foreach \y in {0,1,...,9} { \node [anchor=east] at (0,\y/10) {0.\y}; }
+\end{scope}
+\end{tikzpicture}
+\end{center}
+}
+\end{frame}
+
+%###############################################
+
+\begin{frame}
+\frametitle{Simulation parameters and continuum limit}
+\begin{itemize}
+\item Parameters in the continuum: $g$, $m$
+\item Dimensionless parameters on the lattice:\\
+\begin{center}
+$g$, $L$ $(T\equiv 2L)$ , $M\equiv ma$
+\end{center}
+\item Any observable on lattice is function of input parameters\\
+\begin{center}
+$\langle F_{\rm LAT} \rangle = \langle F_{\rm LAT}(g,L,M) \rangle = \langle F(g) \rangle + \mathcal{O}(L^{-1}) + \mathcal{O}(e^{-LM})$
+\end{center}
+\item continuum limit $\langle F(g) \rangle$ obtained via extrapolation to infinite $L$ $(a\to 0)$
+\end{itemize}
+\end{frame}
+
+%##############################################
+
+\begin{frame}
+\begin{itemize}
+\item Take cont. limit in controlled way - {\color{blue!90} Line of constant Physics:}
+\begin{itemize}
+\item Renormalised "effective" mass in continuum\\
+\begin{center}
+$m_{x}^{2}(g) = \frac{m^{2}}{2} \big(1- 1/(8g) + \mathcal{O}(g^{-2})\big)\quad {\color{red}(\ast)}$
+\end{center}
+\item Keep dimensionless physical quantities constant while $a\to 0$\\
+\begin{center}
+$\frac{V_{2}m_{x}^{2}}{2} \quad \xrightarrow{g \;{\rm fixed}}{} \quad \frac{V_{2}m^{2}}{2} = (LM)^{2} = {\rm const.}$
+\end{center}
+if ${\small \color{red}(\ast)}$ is also true on the lattice
+\end{itemize}\vspace{2mm}
+\item Procedure:
+\begin{itemize}
+\item fix $g$
+\item fix $LM$ large enough to keep finite volume effects small
+\item evaluate $\langle F_{\rm LAT} \rangle$ for $L=8,10,12,16,\ldots$
+\item extrapolate to $L\to \infty$ to obtain $\langle F(g) \rangle$
+\end{itemize}
+\end{itemize}
+
+\begin{center}
+
+\begin{tikzpicture}[scale=0.7, every node/.style={scale=0.8}]
+\draw (-1,-1) rectangle (1,1);
+\path (-1,-1) -- node[below]{\footnotesize $L=5$} (1,-1);
+\path (-1,-1) -- node[left]{\footnotesize $LM=c$} (-1,1);
+\path (-1,1) -- node[above]{\footnotesize $M=c/5$} (1,1);
+\draw [step=0.5cm,dashed] (-1,-1) grid (1,1);
+%\path (0,0) circle (0.6pt) node[below=2pt, fill=white]{\tiny $(an_{0},an_{1})$};
+\foreach \x in {-1,-0.5,...,1}{
+	\foreach \y in {-1,-0.5,...,1}{
+		\fill (\x,\y) circle (0.6pt);
+	}
+}
+\end{tikzpicture}
+\hspace{6mm}
+\begin{tikzpicture}[scale=0.7, every node/.style={scale=0.8}]
+%flat grid
+\draw (-1,-1) rectangle (1,1);
+\path (-1,-1) -- node[below]{\footnotesize $L=7$} (1,-1);
+\path (-1,1) -- node[above]{\footnotesize $M=c/7$} (1,1);
+%\path (-1,-1) -- node[left]{$\sigma$} (-1,1);
+\draw [step=0.333cm,dashed] (-1,-1) grid (1,1);
+%\path (0,0) circle (0.6pt) node[below=2pt, fill=white]{\tiny $(an_{0},an_{1})$};
+\foreach \x in {-1,-0.666,...,1}{
+	\foreach \y in {-1,-0.666,...,1}{
+		\fill (\x,\y) circle (0.6pt);
+	}
+}
+\end{tikzpicture}
+\hspace{6mm}
+\begin{tikzpicture}[scale=0.7, every node/.style={scale=0.8}]
+%flat grid
+\draw (-1,-1) rectangle (1,1);
+\path (-1,-1) -- node[below]{\footnotesize $L=9$} (1,-1);
+\path (-1,1) -- node[above]{\footnotesize $M=c/9$} (1,1);
+%\path (-1,-1) -- node[left]{$\sigma$} (-1,1);
+\draw [step=0.25cm,dashed] (-1,-1) grid (1,1);
+%\path (0,0) circle (0.6pt) node[below=2pt, fill=white]{\tiny $(an_{0},an_{1})$};
+\foreach \x in {-1,-0.75,...,1}{
+	\foreach \y in {-1,-0.75,...,1}{
+		\fill (\x,\y) circle (0.6pt);
+	}
+}
+\end{tikzpicture}
+\end{center}
+\end{frame}
+
+%#########################################################
+\Section{Results}
+
+\begin{frame}[plain]
+\frametitle{Mass of the x field}
+\begin{minipage}{0.5\linewidth}
+\vspace{-20mm}
+Fit timeslice correlators 
+\begin{align*}
+\huge C_{x}(t) &= \frac{1}{L}\sum\limits_{s_{1},s_{2}} \langle x(t,s_{1})x^{*}(0,s_{2})\rangle \\
+&\sim {\rm cosh}\big( (\tfrac{T}{2}-t) m_{x{\rm LAT}} \big)
+\end{align*}
+
+
+\hfill\\
+\vspace{10mm}
+Extract mass via continuum limit\\
+$\frac{m_{x \rm LAT}^{2}(L,g)}{M^{2}} = \frac{m_{x}^{2}(g)}{m^{2}} + \mathcal{O}(L^{-1})$
+\end{minipage}
+\begin{minipage}{0.45\linewidth}
+\vspace{-10mm}
+\input{plot_coshcorr}\\
+\input{mx_vs_g_Lm4_2}
+\end{minipage}
+\end{frame}
+
+%########################################
+
+\begin{frame}[plain]
+\frametitle{The cusp action}
+\begin{itemize}
+\item Observe quadratic divergences $\langle S_{\rm cusp}^{(2)}\rangle \sim \frac{V_{2}}{2}(N_{\rm B}-N_{\rm F})$
+\item On the lattice study only bosonic part of the action\\
+\begin{center}
+$\langle S_{\rm LAT} \rangle = g \frac{(LM)^{2}}{4}f'(g) + \frac{c(g)}{2}(2L^{2}), \quad c(g) = N_{\rm B} +\mathcal{O}(g^{-1})$
+\end{center}
+\end{itemize}
+\vspace{4mm}
+\only<1>{
+\begin{minipage}{0.48\linewidth}
+\begin{center}
+\vspace{2mm}
+\hspace{-5mm}
+\input{c_fit.tex}
+\end{center}
+\end{minipage}
+\begin{minipage}{0.48\linewidth}
+\begin{center}
+\input{Slat-c_fix.tex}
+\end{center}
+\end{minipage}
+}
+\only<2>{
+\begin{center}
+\input{Slat-c_g.tex}
+\end{center}
+}
+\end{frame}
+
+%#######################################
+
+\begin{frame}[plain]
+Subtract divergences and match lattice data to continuum plot via $g_{\rm c} = b \cdot g$, $f'(g)=f'(g_{\rm c})_{\rm c}$
+
+\begin{center}
+\input{f_prime_Lm4_andLm6.tex}
+\end{center}
+\end{frame}
+
+%#######################################
+
+\Section{Conclusion}
+
+\begin{frame}
+\frametitle{Conclusion}
+
+\begin{itemize}
+\item<1-> Investigate cusp anomaly of $\mathcal{N}=4$ SYM from string theory perspective\\[2mm]
+%solve non-trivial 4d QFT with SUSY $\xrightarrow{\color{red} AdS/CFT}{}$ solve non-trivial 2d QFT
+\begin{minipage}{0.38\linewidth}
+\begin{center}
+solve non-trivial 4d QFT with SUSY
+\end{center}
+%\begin{tcolorbox}[colback=white!95!black, colframe=white!90!black]
+%\begin{center}
+%\vspace{-2mm}
+%{\small solve non-trivial 4d QFT with SUSY}
+%\vspace{-2mm}
+%\end{center}
+%\end{tcolorbox}
+\end{minipage}
+\begin{minipage}{0.18\linewidth}
+$\xrightarrow{\color{red} AdS/CFT}{}$
+\end{minipage}
+\begin{minipage}{0.38\linewidth}
+solve non-trivial 2d QFT
+%\begin{tcolorbox}[colback=white!95!black, colframe=white!90!black]
+%\begin{center}
+%\vspace{-2mm}
+%solve non-trivial 2d QFT
+%\vspace{-2mm}
+%\end{center}
+%\end{tcolorbox}
+\end{minipage}
+\vspace{2mm}
+\begin{itemize}
+\item More economic memory consumption 
+\item Green-Schwarz (GS) approach inherits supersymmetry
+\item Only scalar fields involved
+\end{itemize}
+\item<2-> Lattice simulation (gauge-fixed GS string, Wilson term, RHMC):
+\begin{itemize}
+\item Measured observables seem to be in good agreement with expectation at large $g$
+\item At small $g$, $\hat{\mathcal{O}}_{\rm F}$ has small eigenvalues $\to$ sign problem,\\
+Qualitative agreement to expectation derived from integrability
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+%#############################################
+%\usebackgroundtemplate{\centering \includegraphics[height=\paperheight]{BuddhaBrot_light.jpg}}%
+\begin{frame}
+\begin{center}
+{\Huge \color{hublue} \bf Thank you for the attention!}
+\end{center}
 \end{frame}
 
 \end{document}

@@ -6,3 +6,5 @@
 \beamer@sectionintoc {5}{AdS/CFT duality}{9}{0}{4}
 \beamer@sectionintoc {6}{String theory framework}{13}{0}{5}
 \beamer@sectionintoc {7}{Numerical approach}{17}{0}{6}
+\beamer@sectionintoc {8}{Results}{23}{0}{7}
+\beamer@sectionintoc {9}{Conclusion}{27}{0}{8}
