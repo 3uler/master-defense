@@ -51,9 +51,9 @@
 
 \def\authora{Philipp Töpfer}	% First Author
 %\def\affa{Humboldt-Universität zu Berlin, Institut für Physik} % First Author's Affiliation
-%\def\authorb{Her Name}  % Second Author
+\def\authorb{Dr. Valentina Forini}  % Second Author
 %\def\affb{Humboldt-Universität zu Berlin} % Second Author's Affiliation
-%\def\authorc{His Name}  % Third Author
+\def\authorc{Dr. Björn Leder}  % Third Author
 %\def\affc{Humboldt-Universität zu Berlin} % Third Author's Affiliation
 
 \def\linka{}	% Link to your institution's/ personal website
@@ -82,7 +82,7 @@
 
 \begin{tcolorbox}[colback=white!95!black, colframe=white!90!black]
 \begin{center}
-Study the \textcolor{blue!90}{AdS/CFT duality} \textcolor{blue!95!black}{numerically} at hand of the \textcolor{blue!90}{cusp anomaly function} from a \textcolor{blue!90}{string theory perspective}
+\textcolor{blue!90}{Lattice} field theory study of \textcolor{blue!90}{AdS/CFT} from a \textcolor{blue!90}{worldsheet string perspective}
 \end{center}
 \end{tcolorbox}
 \hfill \vspace{1mm}
@@ -91,7 +91,6 @@ Study the \textcolor{blue!90}{AdS/CFT duality} \textcolor{blue!95!black}{numeric
 
 \begin{itemize}
 \item<2-> Motivation
-\item<2-> Cusp anomaly function
 \item<2-> AdS/CFT duality
 \item<2-> String theory framework
 \item<2-> Numerical approach
@@ -104,97 +103,147 @@ Study the \textcolor{blue!90}{AdS/CFT duality} \textcolor{blue!95!black}{numeric
 
 \Section{Motivation}
 
-\frame{
-\frametitle{Motivation}
+%\frame{
+%\frametitle{Motivation}
+%
+%\begin{itemize}
+%\item<1-> Good predictions on the real world via QCD
+%\item<1-> Fundamental aim: particle masses as functions of parameters\\
+%\begin{center} $m_{\rm p} = f(\alpha_{\rm s},\alpha,\mu_{\rm reg},\ldots)$ \end{center}
+%\item<2-> Gain more insights on QCD $\leftrightarrow$ study more symmetric model %($\mathcal{N}=4$ SYM)
+%\item<2-> $\mathcal{N}=4$ SYM: 
+%\begin{itemize}
+%\item no massive particles
+%\item measure scaling dimensions of local operators and Wilson loops
+%\end{itemize}
+%\item<3-> Twist two operators:\\
+%scaling dimension $\Delta_{S} = 2+S+ \gamma_{S}$\\
+%twist \hspace{19mm} $\Delta_{S}-S = 2+ \gamma_{S}$
+%\end{itemize}
+%}
 
+\begin{frame}
+\frametitle{Motivation}
 \begin{itemize}
-\item<1-> Good predictions on the real world via QCD
-\item<1-> Fundamental aim: particle masses as functions of parameters\\
-\begin{center} $m_{\rm p} = f(\alpha_{\rm s},\alpha,\mu_{\rm reg},\ldots)$ \end{center}
-\item<2-> Gain more insights on QCD $\leftrightarrow$ study more symmetric model %($\mathcal{N}=4$ SYM)
-\item<2-> $\mathcal{N}=4$ SYM: 
+\item Standard Model is most efficient theory of particle physics
 \begin{itemize}
-\item no massive particles
-\item measure scaling dimensions of local operators and Wilson loops
+\item Unable to incorporate gravity
+\item Study $\mathcal{N}=4$ SYM (superconformal version of QCD)
 \end{itemize}
-\item<3-> Twist two operators:\\
-scaling dimension $\Delta_{S} = 2+S+ \gamma_{S}$\\
-twist \hspace{19mm} $\Delta_{S}-S = 2+ \gamma_{S}$
+\item One of most remarkable discoveries in last decades:\\
+{\bf AdS/CFT correspondence} [Maldacena 1997]
+\begin{itemize}
+\item Relates a superconformal field theory (like $\mathcal{N}=4$ SYM) to a string theory
+\item Strong/weak coupling duality
 \end{itemize}
-}
+\item Study AdS/CFT via the cusp anomaly function ${\color{blue}f(g)}$ from $\mathcal{N}=4$ SYM
+\end{itemize}
+\end{frame}
 
 %################################################
 
-\Section{Cusp anomaly function}
+{\subsec{Cusp anomaly function}
+
+%\begin{frame}
+%% mp left
+%\begin{minipage}[t]{0.5\linewidth}
+%\begin{tcolorbox}[colback=white!95!black, colframe=white!90!black]
+%\begin{center}
+%\vspace{2.5mm}
+%Wilson loop with cusp
+%\vspace{2mm}
+%\end{center}
+%\end{tcolorbox}
+%%
+%\begin{tcolorbox}[colback=white!95!black, colframe=white!90!black]
+%\begin{center}
+%$\langle \mathcal{W}[\mathcal{C_{\rm cusp}}]\rangle \sim e^{-\frac{\color{blue}{f(g)}}{2}\vert \phi\vert \ln \frac{L}{\epsilon}}$
+%\end{center}
+%\end{tcolorbox}
+%\end{minipage}
+%%
+%% mp center
+%%
+%\begin{minipage}[t]{0.05\linewidth}
+%\begin{center}
+%\vspace{1.5mm}
+%$\Leftrightarrow$
+%\end{center}
+%\end{minipage}
+%%
+%% mp right
+%%
+%\begin{minipage}[t]{0.4\linewidth}
+%\begin{tcolorbox}[colback=white!95!black, colframe=white!90!black]
+%\begin{center}
+%anomalous dimension $\gamma_{S}$
+%\end{center}
+%\end{tcolorbox}
+%%
+%\begin{tcolorbox}[colback=white!95!black, colframe=white!90!black]
+%\begin{center}
+%\vspace{1mm}
+%$\gamma_{S} \simeq {\color{blue}f(g)} \ln S$
+%\vspace{1mm}
+%\end{center}
+%\end{tcolorbox}
+%\end{minipage}
+%%
+%%
+%%
+%\only<1>{
+%\begin{center}
+%\begin{tikzpicture}[thick,scale=0.5, every node/.style={scale=0.7}]
+%\node[anchor=south west,inner sep=0] (image) at (0,0) {\includegraphics[width=0.8\textwidth]{W_cusp.png}};
+%\begin{scope}[x={(image.south east)},y={(image.north west)}]
+%\node [anchor=west] at (0.69,0.3) {$\mathcal{C_{\rm cusp}}$};
+%\node [anchor=south] at (0.072,0.14) {$L$};
+%\node [anchor=south] at (0.45,0.78) {$\epsilon$};
+%\node [anchor=west] at (0.62,0.82) {$\phi$};
+%%\draw[help lines,xstep=.1,ystep=.1] (0,0) grid (1,1);
+%%\foreach \x in {0,1,...,9} { \node [anchor=north] at (\x/10,0) {0.\x}; }
+%%\foreach \y in {0,1,...,9} { \node [anchor=east] at (0,\y/10) {0.\y}; }
+%\end{scope}
+%\end{tikzpicture}
+%\end{center}
+%}
+%%
+%%
+%\only<2>{
+%\begin{center}
+%via cusp anomaly function
+%\end{center}
+%\begin{minipage}{0.65\linewidth}
+%\begin{tikzpicture}[thick,scale=0.5, every node/.style={scale=0.7}]
+%\node[anchor=south west,inner sep=0] (image) at (0,0) {\includegraphics[width=1.1\textwidth]{cusp_anom.png}};
+%\begin{scope}[x={(image.south east)},y={(image.north west)}]
+%\node [anchor=east] at (0.15,0.92) {$\color{blue} f(g)$};
+%\node [anchor=north] at (0.85,0.15) {$\color{blue} g$};
+%\node [anchor=south] at (0.75,0.8) {\footnotesize pert. string $\sigma$-model};
+%\node [anchor=north] at (0.22,0.17) {\footnotesize pert. gauge theory};
+%\node [anchor=east] at (0.5,0.6) {\textcolor{red}{\footnotesize Integrability}};
+%\node [anchor=west] at (0.5,0.5) {\textcolor{red}{\footnotesize non-pert. methods}};
+%%\draw[help lines,xstep=.1,ystep=.1] (0,0) grid (1,1);
+%%\foreach \x in {0,1,...,9} { \node [anchor=north] at (\x/10,0) {0.\x}; }
+%%\foreach \y in {0,1,...,9} { \node [anchor=east] at (0,\y/10) {0.\y}; }
+%\end{scope}
+%\end{tikzpicture}
+%\end{minipage}
+%%
+%%
+%\begin{minipage}{0.3\linewidth}
+%Here ${\color{blue}g} \equiv \frac{\sqrt{\lambda}}{4\pi} $ \\[3mm]
+%t'Hooft coupling\\[2mm]
+%$\lambda = g_{\rm YM}^{2}N = \frac{R^{4}}{\alpha'^{2}}$
+%
+%\end{minipage}
+%}
+%\end{frame}
 
 \begin{frame}
-% mp left
-\begin{minipage}[t]{0.5\linewidth}
-\begin{tcolorbox}[colback=white!95!black, colframe=white!90!black]
+\vspace{-2mm}
 \begin{center}
-\vspace{2.5mm}
-Wilson loop with cusp
-\vspace{2mm}
-\end{center}
-\end{tcolorbox}
-%
-\begin{tcolorbox}[colback=white!95!black, colframe=white!90!black]
-\begin{center}
-$\langle \mathcal{W}[\mathcal{C_{\rm cusp}}]\rangle \sim e^{-\frac{\color{blue}{f(g)}}{2}\vert \phi\vert \ln \frac{L}{\epsilon}}$
-\end{center}
-\end{tcolorbox}
-\end{minipage}
-%
-% mp center
-%
-\begin{minipage}[t]{0.05\linewidth}
-\begin{center}
-\vspace{1.5mm}
-$\Leftrightarrow$
-\end{center}
-\end{minipage}
-%
-% mp right
-%
-\begin{minipage}[t]{0.4\linewidth}
-\begin{tcolorbox}[colback=white!95!black, colframe=white!90!black]
-\begin{center}
-anomalous dimension $\gamma_{S}$
-\end{center}
-\end{tcolorbox}
-%
-\begin{tcolorbox}[colback=white!95!black, colframe=white!90!black]
-\begin{center}
-\vspace{1mm}
-$\gamma_{S} \simeq {\color{blue}f(g)} \ln S$
-\vspace{1mm}
-\end{center}
-\end{tcolorbox}
-\end{minipage}
-%
-%
-%
-\only<1>{
-\begin{center}
-\begin{tikzpicture}[thick,scale=0.5, every node/.style={scale=0.7}]
-\node[anchor=south west,inner sep=0] (image) at (0,0) {\includegraphics[width=0.8\textwidth]{W_cusp.png}};
-\begin{scope}[x={(image.south east)},y={(image.north west)}]
-\node [anchor=west] at (0.69,0.3) {$\mathcal{C_{\rm cusp}}$};
-\node [anchor=south] at (0.072,0.14) {$L$};
-\node [anchor=south] at (0.45,0.78) {$\epsilon$};
-\node [anchor=west] at (0.62,0.82) {$\phi$};
-%\draw[help lines,xstep=.1,ystep=.1] (0,0) grid (1,1);
-%\foreach \x in {0,1,...,9} { \node [anchor=north] at (\x/10,0) {0.\x}; }
-%\foreach \y in {0,1,...,9} { \node [anchor=east] at (0,\y/10) {0.\y}; }
-\end{scope}
-\end{tikzpicture}
-\end{center}
-}
-%
-%
-\only<2>{
-\begin{center}
-via cusp anomaly function
+Cusp anomaly function
 \end{center}
 \begin{minipage}{0.65\linewidth}
 \begin{tikzpicture}[thick,scale=0.5, every node/.style={scale=0.7}]
@@ -220,8 +269,32 @@ t'Hooft coupling\\[2mm]
 $\lambda = g_{\rm YM}^{2}N = \frac{R^{4}}{\alpha'^{2}}$
 
 \end{minipage}
-}
+\par
+\vspace{2mm}
+%Investigate cusp anomaly of $\mathcal{N}=4$ SYM from string theory perspective\\[2mm]
+%solve non-trivial 4d QFT with SUSY $\xrightarrow{\color{red} AdS/CFT}{}$ solve non-trivial 2d QFT
+\begin{itemize}
+\item[] Numerical investigation:\\[2mm]
+\begin{minipage}{0.38\linewidth}
+\begin{center}
+\small solve non-trivial 4d QFT with SUSY
+\end{center}
+\end{minipage}
+\begin{minipage}{0.18\linewidth}
+$\xrightarrow{\color{red} AdS/CFT}{}$
+\end{minipage}
+\begin{minipage}{0.38\linewidth}
+\small solve non-trivial 2d QFT
+\end{minipage}
+\vspace{2mm}
+\begin{itemize}
+\item More economic memory consumption 
+\item Green-Schwarz (GS) approach inherits supersymmetry
+\item Only scalar fields involved
+\end{itemize}
+\end{itemize}
 \end{frame}
+}
 
 %################################################
 
@@ -343,7 +416,7 @@ $\langle \mathcal{W}[\mathcal{C}]\rangle = \frac{1}{N}{\rm Tr}\,\mathcal{P}\,e^{
 %
 \begin{tcolorbox}[colback=white!95!blue, colframe=white!90!black]
 \vspace{1mm}
-$\!\!Z_{\rm string}[\mathcal{C}]\!=\! \int \mathcal{D}X\mathcal{D}h\, e^{-S_{\rm string}(X,h)} \!\sim\! e^{-A(\mathcal{C})} $ \\
+${\!\!Z_{\rm string}[\mathcal{C}]\!=\! \int \mathcal{D}X\mathcal{D}h\, e^{-S_{\rm string}(X,h)} \!\sim\! e^{-A_{\rm reg}(\mathcal{C})}}$\\
 \vspace{-1mm}
 \end{tcolorbox}
 \end{minipage}
@@ -357,22 +430,35 @@ $\!\!Z_{\rm string}[\mathcal{C}]\!=\! \int \mathcal{D}X\mathcal{D}h\, e^{-S_{\rm
 \begin{minipage}{0.6\linewidth}
 vev of light-like cusped Wilson loop\\
 \begin{tcolorbox}[colback=white!95!black, colframe=white!90!black]
-$\langle\mathcal{W}[\mathcal{C}_{\rm cusp}]\rangle \sim e^{-\frac{f(g)}{2}\vert\phi\vert \ln \frac{L}{\epsilon}}$
+${\!\!\!\langle\mathcal{W}[\mathcal{C}_{\rm cusp}]\rangle \sim e^{-\frac{f(g)}{2}\vert\phi\vert \ln \frac{L}{\epsilon}}, \quad \phi\to\infty}$
 \end{tcolorbox}
 \end{minipage}
 %
 \begin{minipage}{0.35\linewidth}
-\begin{center}
-\begin{tikzpicture}[thick,scale=0.9, every node/.style={scale=0.7}]
-\node[anchor=south west,inner sep=0] (image) at (0,0) {\includegraphics[width=1.2\textwidth]{cusp_worldsheet_vec.png}};
+\begin{flushright}
+%\begin{tikzpicture}[thick,scale=0.9, every node/.style={scale=0.7}]
+%\node[anchor=south west,inner sep=0] (image) at (0,0) {\includegraphics[width=1.2\textwidth]{cusp_worldsheet_vec.png}};
+%\begin{scope}[x={(image.south east)},y={(image.north west)}]
+%\node [anchor=north] at (0.6,0.37) {$\mathcal{C}_{\rm cusp}$};
+%%\draw[help lines,xstep=.1,ystep=.1] (0,0) grid (1,1);
+%%\foreach \x in {0,1,...,9} { \node [anchor=north] at (\x/10,0) {0.\x}; }
+%%\foreach \y in {0,1,...,9} { \node [anchor=east] at (0,\y/10) {0.\y}; }
+%\end{scope}
+%\end{tikzpicture}
+\vspace{3mm}
+\begin{tikzpicture}[thick,scale=0.8, every node/.style={scale=0.7}]
+\node[anchor=south west,inner sep=0] (image) at (0,0) {\includegraphics[width=1.5\textwidth]{W_cusp.png}};
 \begin{scope}[x={(image.south east)},y={(image.north west)}]
-\node [anchor=north] at (0.6,0.37) {$\mathcal{C}_{\rm cusp}$};
+\node [anchor=west] at (0.64,0.3) {$\mathcal{C_{\rm cusp}}$};
+\node [anchor=south] at (0.072,0.14) {$L$};
+\node [anchor=south] at (0.45,0.78) {$\epsilon$};
+\node [anchor=west] at (0.62,0.82) {$\mathit{\Phi}=i\phi$};
 %\draw[help lines,xstep=.1,ystep=.1] (0,0) grid (1,1);
 %\foreach \x in {0,1,...,9} { \node [anchor=north] at (\x/10,0) {0.\x}; }
 %\foreach \y in {0,1,...,9} { \node [anchor=east] at (0,\y/10) {0.\y}; }
 \end{scope}
 \end{tikzpicture}
-\end{center}
+\end{flushright}
 \end{minipage}
 %
 \begin{center}
@@ -403,15 +489,24 @@ $S = g \int \dd\tau \dd \sigma\,\left[ G \del X \cdot \del X + \bar{\!\mathit{\T
 %
 \begin{itemize}
 \item $X^{\mu}$ - coordinates of 10d target space
-\item $\mathit{\Theta}^{1},\, \mathit{\Theta}^{2}$ - anti-commuting Majorana spinors
+\item $\mathit{\Theta}^{1},\, \mathit{\Theta}^{2}$ - anti-commuting Majorana-Weyl spinors
 \end{itemize}
 
 \item Fix $\kappa$-symmetry and apply bosonic light-cone gauge \\
-$\Rightarrow$ action at most quartic in complex Grassmann fields $\theta^{i}, \eta^{i}$ (inherited from $\mathit{\Theta}$)
+$\Rightarrow$ action at most quartic in complex Grassmann fields $\theta^{i}, \eta^{i}$ (remnants of $\mathit{\Theta}$)
 
 \end{itemize}
 }
 
+%###############################################################
+%
+%\begin{frame}
+%\frametitle{Linearisation of fermions}
+%quartic fermion contributions $\to \mathit{\Psi}^T \mathcal{O}_{\rm F} \mathit{\Psi}$\\
+%Apply a Hubbard-Stratonovich transformation\\
+%
+%\end{frame}
+%
 %###############################################################
 
 \begin{frame}
@@ -427,7 +522,7 @@ $z = \sqrt{\frac{\tau}{\sigma}},\quad x^{+}=\tau,\quad x^{-}= -\frac{1}{2\sigma}
 \vspace{2mm}
 bounded by a null cusp \\ ($AdS_{5}$ boundary at $0=z^{2}=-2x^{+}x^{-}$)
 %
-\item expand around classical solution + \\{\small $(\tau,\sigma) \to (t,s)=(\ln \tau,\ln \sigma)$}\\
+\item Expand around classical solution + \\{\small $(\tau,\sigma) \to (t,s)=(\ln \tau,\ln \sigma)$}\\
 \vspace{2mm}
 {\small $S_{\rm cusp} = g\int \dd t\dd s\, \mathcal{L}_{\rm cusp}$}
 
@@ -456,7 +551,14 @@ bounded by a null cusp \\ ($AdS_{5}$ boundary at $0=z^{2}=-2x^{+}x^{-}$)
 
 \frame{
 \frametitle{Green-Schwarz string in null-cusp background}
-linearising quartic fermion contributions
+\only<1>{
+Linearising quartic fermion contributions with {\bf Hubbard-Stratonovich transformation}\\[4mm]
+\begin{center}
+{ $e^{-g \int \dd t \dd s [-\frac{1}{z^{2}}(-6(\eta^{2})^{2}-\cdots )]} \sim \int \mathcal{D}\phi \mathcal{D}\phi^{I} e^{-g\int \dd t \dd s [\frac{12}{z}\eta^{2}\phi +6\phi^{2} +\cdots] }$}
+\end{center}
+}
+
+
 {\small \begin{align*}
 \mathcal{L}_{\rm cusp} &=  {\left\vert \partial_t {x} + {\tfrac{m}{2}}{x} \right\vert}^2 + \tfrac{1}{{ z}^4}{\left\vert \partial_s {x} -\tfrac{m}{2}{x} \right\vert}^2 + \left(\partial_t {z}^M + \tfrac{m}{2}{z}^M \right)^2 \\ &\quad+ \frac{1}{{ z}^4} \left(\partial_s {z}^M -\tfrac{m}{2}{z}^M\right)^2
 + \phi^2 +\left( \phi_{I}\right)^{2} + \mathit{\Psi}^T \mathcal{O}_{\rm F} \mathit{\Psi} 
@@ -497,7 +599,7 @@ $A=-\frac{\sqrt{6}}{z}\phi \mathds{1}_{4} + \frac{1}{z}\tilde{\phi}+\frac{1}{z^{
 \begin{frame}
 \frametitle{Numerical approach}
 
-requires calculating expectation values\vspace{2mm}
+Requires calculating expectation values\vspace{2mm}
 {
 %\begin{align*}
 \begin{tcolorbox}[colback=white!95!black, colframe=white!90!black]
@@ -525,8 +627,8 @@ $\Downarrow \qquad \qquad \Downarrow$
 \begin{tcolorbox}[colback=white!95!black, colframe=white!90!black]
 {\small ${\!\!\!\!\!\!\!\langle A \rangle = \tfrac{1}{Z}\int \mathcal{D}\phi\, A[\phi]e^{-S[\phi]}, \quad Z=\int \mathcal{D}\phi\,e^{-S[\phi]}}$}
 \end{tcolorbox}% \vspace{2mm}
-discretise the worldsheet with const. lattice spacing $a$ \\
-{\small$\mathit{\Lambda}=\lbrace(n_{0},n_{1})\vert n_{\alpha}=0,\ldots,(N_{\alpha}-1)\rbrace$} so that {\small$\xi^{\alpha}=(\tau,\sigma)\equiv (an_{0},an_{1}) \equiv an$}
+Discretise the worldsheet with const. lattice spacing $a$ \\
+{\small$\mathit{\Lambda}=\lbrace(n_{0},n_{1})\vert n_{\alpha}=0,\ldots,(N_{\alpha}-1)\rbrace$} so that {\small$\xi^{\alpha}=(t,s)\equiv (an_{0},an_{1}) \equiv an$}
 \end{minipage}
 \begin{minipage}{0.3\linewidth}
 \only<1->{
@@ -560,11 +662,11 @@ discretise the worldsheet with const. lattice spacing $a$ \\
  \textbf{PI measure:} \> discretise fields $\phi \to \phi(n)$ \\ 
    \> $\mathcal{D}\phi \to \prod\limits_{n} \dd \phi(n)$
 \end{tabbing} 
-\item \textbf{Operators: } $\del_{\alpha}\phi(n) \to \tfrac{1}{a}[\phi(n+\hat{\alpha})-\phi(n)] \Rightarrow S \to S_{\rm disc}$
+\item \textbf{Operators: } $\del_{\alpha}\phi(n) \to \tfrac{1}{a}[\phi(n+\hat{\alpha})-\phi(n)] \Rightarrow S \to S_{\rm discr}$
 \end{itemize}\hfill
 %\vspace{2mm}
 \begin{minipage}{0.6\linewidth}
-$\Rightarrow Z_{\rm disc} = \int \prod\limits_{n} \dd\phi(n)\; e^{-S_{\rm disc}[\phi]}\quad\sim$
+$\Rightarrow Z_{\rm discr} = \int \prod\limits_{n} \dd\phi(n)\; e^{-S_{\rm discr}[\phi]}\quad\sim$
 \end{minipage} 
 \begin{minipage}{0.38\linewidth}
 multidimensional integral treatable via MC techniques
@@ -577,7 +679,7 @@ multidimensional integral treatable via MC techniques
 \frametitle{Monte Carlo simulations in QFT}
 
 \only<1>{
-generate {\color{blue!90}ensemble} of field configurations $\lbrace \phi_{1},\ldots,\phi_{N}\rbrace$ distributed according $P[\phi]=e^{-S_{\rm E}[\phi]}/Z$\\[3mm]
+Generate {\color{blue!90}ensemble} of field configurations $\lbrace \phi_{1},\ldots,\phi_{N}\rbrace$ distributed according $P[\phi]=\exp \big(-S_{\rm E}[\phi]\big)/Z$\\[3mm]
 {\color{hublue}\bf Ensemble average}
 \begin{tcolorbox}[colback=white!95!black, colframe=white!90!black]
 \begin{center}
@@ -591,7 +693,7 @@ generate {\color{blue!90}ensemble} of field configurations $\lbrace \phi_{1},\ld
 %
 \begin{itemize}
 \item Grassmann fields are integrated out\\
-{\small ${\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\int \mathcal{D}\mathit{\Psi}\, e^{-\mathit{\Psi}^{\rm T}\hat{\mathcal{O}}_{\rm F}\mathit{\Psi}} \sim \sqrt{\det \hat{\mathcal{O}}_{\rm F}} \quad{\color{red} \xrightarrow{!}}\quad \sqrt[4]{\det (\hat{\mathcal{O}}_{\rm F}\hat{\mathcal{O}}_{\rm F}^{\dagger})} \sim \int \mathcal{D}\zeta\mathcal{D}\zeta^{\dagger}\, e^{-\zeta^{\dagger}(\hat{\mathcal{O}}_{\rm F}\hat{\mathcal{O}}_{\rm F}^{\dagger})^{-\frac{1}{4}}\zeta}}$}
+{\small ${\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\int \mathcal{D}\mathit{\Psi}\, e^{-\mathit{\Psi}^{\rm T}\hat{\mathcal{O}}_{\rm F}\mathit{\Psi}} = {\rm Pf}\big( \hat{\mathcal{O}}_{\rm F} \big) \quad{\color{red} \xrightarrow{!}}\quad \sqrt[4]{\det (\hat{\mathcal{O}}_{\rm F}\hat{\mathcal{O}}_{\rm F}^{\dagger})} \sim \int \mathcal{D}\zeta\mathcal{D}\zeta^{\dagger}\, e^{-\zeta^{\dagger}(\hat{\mathcal{O}}_{\rm F}\hat{\mathcal{O}}_{\rm F}^{\dagger})^{-\frac{1}{4}}\zeta}}$}
 \item Pseudofermionic contribution included into $P[\phi]$
 \item Include Wilson term to overcome fermion doubling
 \item Use rational hybrid Monte Carlo (RHMC) algorithm to generate ensembles
@@ -599,7 +701,7 @@ generate {\color{blue!90}ensemble} of field configurations $\lbrace \phi_{1},\ld
 }
 %
 \only<2>{
-generate {\color{blue!90}ensemble} of field configurations $\lbrace \phi_{1},\ldots,\phi_{N}\rbrace$ distributed according $P[\phi]=e^{-S_{\rm E}[\phi]}/\tilde{Z}\cdot \sqrt{\det \hat{\mathcal{O}}_{\rm F}}$\\[3mm]
+Generate {\color{blue!90}ensemble} of field configurations $\lbrace \phi_{1},\ldots,\phi_{N}\rbrace$ distributed according $P[\phi]=\exp\big(-S_{\rm E}[\phi] - \zeta^{\dagger}(\hat{\mathcal{O}}_{\rm F}\hat{\mathcal{O}}_{\rm F}^{\dagger})^{-\frac{1}{4}}\zeta\big) /\tilde{Z}$\\[3mm]
 {\color{hublue}\bf Ensemble average}
 \begin{tcolorbox}[colback=white!95!black, colframe=white!90!black]
 \begin{center}
@@ -643,7 +745,7 @@ $g$, $L$ $(T\equiv 2L)$ , $M\equiv ma$
 \begin{center}
 $\langle F_{\rm LAT} \rangle = \langle F_{\rm LAT}(g,L,M) \rangle = \langle F(g) \rangle + \mathcal{O}(L^{-1}) + \mathcal{O}(e^{-LM})$
 \end{center}
-\item continuum limit $\langle F(g) \rangle$ obtained via extrapolation to infinite $L$ $(a\to 0)$
+\item Continuum limit $\langle F(g) \rangle$ obtained via extrapolation to infinite $L$ $(a\to 0)$
 \end{itemize}
 \end{frame}
 
@@ -653,7 +755,7 @@ $\langle F_{\rm LAT} \rangle = \langle F_{\rm LAT}(g,L,M) \rangle = \langle F(g)
 \begin{itemize}
 \item Take cont. limit in controlled way - {\color{blue!90} Line of constant Physics:}
 \begin{itemize}
-\item Renormalised "effective" mass in continuum\\
+\item Renormalised physical mass in continuum\\
 \begin{center}
 $m_{x}^{2}(g) = \frac{m^{2}}{2} \big(1- 1/(8g) + \mathcal{O}(g^{-2})\big)\quad {\color{red}(\ast)}$
 \end{center}
@@ -665,10 +767,10 @@ if ${\small \color{red}(\ast)}$ is also true on the lattice
 \end{itemize}\vspace{2mm}
 \item Procedure:
 \begin{itemize}
-\item fix $g$
-\item fix $LM$ large enough to keep finite volume effects small
-\item evaluate $\langle F_{\rm LAT} \rangle$ for $L=8,10,12,16,\ldots$
-\item extrapolate to $L\to \infty$ to obtain $\langle F(g) \rangle$
+\item Fix $g$
+\item Fix $LM$ large enough to keep finite volume effects small
+\item Evaluate $\langle F_{\rm LAT} \rangle$ for $L=8,10,12,16,\ldots$
+\item Extrapolate to $L\to \infty$ to obtain $\langle F(g) \rangle$
 \end{itemize}
 \end{itemize}
 
@@ -677,7 +779,7 @@ if ${\small \color{red}(\ast)}$ is also true on the lattice
 \begin{tikzpicture}[scale=0.7, every node/.style={scale=0.8}]
 \draw (-1,-1) rectangle (1,1);
 \path (-1,-1) -- node[below]{\footnotesize $L=5$} (1,-1);
-\path (-1,-1) -- node[left]{\footnotesize $LM=c$} (-1,1);
+\path (-1.7,-1) -- node[left]{\footnotesize $LM=c,$} (-1.7,1);
 \path (-1,1) -- node[above]{\footnotesize $M=c/5$} (1,1);
 \draw [step=0.5cm,dashed] (-1,-1) grid (1,1);
 %\path (0,0) circle (0.6pt) node[below=2pt, fill=white]{\tiny $(an_{0},an_{1})$};
@@ -722,8 +824,8 @@ if ${\small \color{red}(\ast)}$ is also true on the lattice
 
 %#########################################################
 \Section{Results}
-
-\begin{frame}[plain]
+{\usefoottemplate{}
+\begin{frame}
 \frametitle{Mass of the x field}
 \begin{minipage}{0.5\linewidth}
 \vspace{-20mm}
@@ -742,13 +844,14 @@ $\frac{m_{x \rm LAT}^{2}(L,g)}{M^{2}} = \frac{m_{x}^{2}(g)}{m^{2}} + \mathcal{O}
 \begin{minipage}{0.45\linewidth}
 \vspace{-10mm}
 \input{plot_coshcorr}\\
+\vspace{-6mm}
 \input{mx_vs_g_Lm4_2}
 \end{minipage}
 \end{frame}
 
 %########################################
 
-\begin{frame}[plain]
+\begin{frame}
 \frametitle{The cusp action}
 \begin{itemize}
 \item Observe quadratic divergences $\langle S_{\rm cusp}^{(2)}\rangle \sim \frac{V_{2}}{2}(N_{\rm B}-N_{\rm F})$
@@ -768,20 +871,20 @@ $\langle S_{\rm LAT} \rangle = g \frac{(LM)^{2}}{4}f'(g) + \frac{c(g)}{2}(2L^{2}
 \end{minipage}
 \begin{minipage}{0.48\linewidth}
 \begin{center}
-\input{Slat-c_fix.tex}
+\input{Slat-c_g.tex}
 \end{center}
 \end{minipage}
 }
-\only<2>{
-\begin{center}
-\input{Slat-c_g.tex}
-\end{center}
-}
+%\only<2>{
+%\begin{center}
+%\input{Slat-c_g.tex}
+%\end{center}
+%}
 \end{frame}
 
 %#######################################
 
-\begin{frame}[plain]
+\begin{frame}
 Subtract divergences and match lattice data to continuum plot via $g_{\rm c} = b \cdot g$, $f'(g)=f'(g_{\rm c})_{\rm c}$
 
 \begin{center}
@@ -790,7 +893,7 @@ Subtract divergences and match lattice data to continuum plot via $g_{\rm c} = b
 \end{frame}
 
 %#######################################
-
+}
 \Section{Conclusion}
 
 \begin{frame}

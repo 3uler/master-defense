@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.5.24)  29 JAN 2017 16:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.5.24)  3 FEB 2017 11:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1536,7 +1536,7 @@ Overfull \hbox (2.13672pt too wide) detected at line 71
 o.pdf>]
 
 LaTeX Font Warning: Font shape `T1/cmss/m/n' in size <4> not available
-(Font)              size <5> substituted on input line 101.
+(Font)              size <5> substituted on input line 100.
 
 
 Overfull \hbox (2.13672pt too wide) has occurred while \output is active
@@ -1559,25 +1559,45 @@ Overfull \hbox (2.13672pt too wide) has occurred while \output is active
 
 [4
 
-]
+] <cusp_anom.png, id=93, 443.0151pt x 311.4837pt>
+File: cusp_anom.png Graphic file (type png)
+ <use cusp_anom.png>
+Package pdftex.def Info: cusp_anom.png used on input line 296.
+(pdftex.def)             Requested size: 219.7114pt x 154.48196pt.
+
+Overfull \vbox (10.73257pt too high) detected at line 296
+ []
+
+
 Overfull \hbox (2.13672pt too wide) has occurred while \output is active
   []  
  []
 
 [5
 
-]
+ <./cusp_anom.png>]
 Overfull \hbox (2.13672pt too wide) has occurred while \output is active
   []  
  []
 
 [6
 
-] <W_cusp.png, id=107, 315.8199pt x 193.32225pt>
-File: W_cusp.png Graphic file (type png)
- <use W_cusp.png>
-Package pdftex.def Info: W_cusp.png used on input line 224.
-(pdftex.def)             Requested size: 245.83282pt x 150.48396pt.
+] <feynm.png, id=118, 337.5009pt x 183.5658pt>
+File: feynm.png Graphic file (type png)
+ <use feynm.png>
+Package pdftex.def Info: feynm.png used on input line 360.
+(pdftex.def)             Requested size: 50.62294pt x 27.53368pt.
+
+<AdS_S.png, id=119, 470.11635pt x 164.0529pt>
+File: AdS_S.png Graphic file (type png)
+ <use AdS_S.png>
+Package pdftex.def Info: AdS_S.png used on input line 360.
+(pdftex.def)             Requested size: 70.5144pt x 24.60686pt.
+
+Overfull \hbox (29.11731pt too wide) in paragraph at lines 360--360
+[][] 
+ []
+
 
 Overfull \hbox (2.13672pt too wide) has occurred while \output is active
   []  
@@ -1585,14 +1605,20 @@ Overfull \hbox (2.13672pt too wide) has occurred while \output is active
 
 [7
 
- <./W_cusp.png>] <cusp_anom.png, id=121, 443.0151pt x 311.4837pt>
-File: cusp_anom.png Graphic file (type png)
+ <./feynm.png> <./AdS_S.png>]
+Overfull \hbox (3.78275pt too wide) in paragraph at lines 424--424
+ []\T1/cmss/bx/n/10.95 AdS/CFT 
+ []
 
-<use cusp_anom.png>
-Package pdftex.def Info: cusp_anom.png used on input line 224.
-(pdftex.def)             Requested size: 219.7114pt x 154.48196pt.
+<Wilson_loop_worldsheet1.png, id=132, 1726.45pt x 1055.945pt>
+File: Wilson_loop_worldsheet1.png Graphic file (type png)
 
-Overfull \vbox (11.71033pt too high) detected at line 224
+<use Wilson_loop_worldsheet1.png>
+Package pdftex.def Info: Wilson_loop_worldsheet1.png used on input line 424.
+(pdftex.def)             Requested size: 157.0235pt x 96.0299pt.
+
+Overfull \hbox (9.88026pt too wide) in paragraph at lines 424--424
+[]$[]$ 
  []
 
 
@@ -1602,47 +1628,55 @@ Overfull \hbox (2.13672pt too wide) has occurred while \output is active
 
 [8
 
- <./cusp_anom.png>]
+ <./Wilson_loop_worldsheet1.png>]
+Overfull \hbox (11.16943pt too wide) in paragraph at lines 473--473
+[]$[]$ 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 473--473
+
+ []
+
+<W_cusp.png, id=144, 315.8199pt x 193.32225pt>
+File: W_cusp.png Graphic file (type png)
+ <use W_cusp.png>
+Package pdftex.def Info: W_cusp.png used on input line 473.
+(pdftex.def)             Requested size: 161.32999pt x 98.75528pt.
+
+Overfull \hbox (5.37717pt too wide) in paragraph at lines 473--473
+ []
+ []
+
+
 Overfull \hbox (2.13672pt too wide) has occurred while \output is active
   []  
  []
 
 [9
 
-] <feynm.png, id=140, 337.5009pt x 183.5658pt>
-File: feynm.png Graphic file (type png)
- <use feynm.png>
-Package pdftex.def Info: feynm.png used on input line 287.
-(pdftex.def)             Requested size: 50.62294pt x 27.53368pt.
-
-<AdS_S.png, id=141, 470.11635pt x 164.0529pt>
-File: AdS_S.png Graphic file (type png)
- <use AdS_S.png>
-Package pdftex.def Info: AdS_S.png used on input line 287.
-(pdftex.def)             Requested size: 70.5144pt x 24.60686pt.
-
-Overfull \hbox (29.11731pt too wide) in paragraph at lines 287--287
-[][] 
- []
-
-
+ <./W_cusp.png>]
 Overfull \hbox (2.13672pt too wide) has occurred while \output is active
   []  
  []
 
 [10
 
- <./feynm.png> <./AdS_S.png>]
-Overfull \hbox (3.78275pt too wide) in paragraph at lines 351--351
- []\T1/cmss/bx/n/10.95 AdS/CFT 
+] <cusp_worldsheet_vec.png, id=166, 431.09055pt x 339.30765pt>
+File: cusp_worldsheet_vec.png Graphic file (type png)
+
+<use cusp_worldsheet_vec.png>
+Package pdftex.def Info: cusp_worldsheet_vec.png used on input line 548.
+(pdftex.def)             Requested size: 153.64493pt x 120.93396pt.
+
+Overfull \hbox (20.40031pt too wide) in paragraph at lines 548--548
+ [] 
  []
 
-<Wilson_loop_worldsheet1.png, id=154, 1726.45pt x 1055.945pt>
-File: Wilson_loop_worldsheet1.png Graphic file (type png)
 
-<use Wilson_loop_worldsheet1.png>
-Package pdftex.def Info: Wilson_loop_worldsheet1.png used on input line 351.
-(pdftex.def)             Requested size: 157.0235pt x 96.0299pt.
+Overfull \vbox (14.11685pt too high) detected at line 548
+ []
+
 
 Overfull \hbox (2.13672pt too wide) has occurred while \output is active
   []  
@@ -1650,17 +1684,10 @@ Overfull \hbox (2.13672pt too wide) has occurred while \output is active
 
 [11
 
- <./Wilson_loop_worldsheet1.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 387--387
-
+ <./cusp_worldsheet_vec.png>]
+Overfull \vbox (6.42123pt too high) detected at line 594
  []
 
-<cusp_worldsheet_vec.png, id=165, 431.09055pt x 339.30765pt>
-File: cusp_worldsheet_vec.png Graphic file (type png)
-
-<use cusp_worldsheet_vec.png>
-Package pdftex.def Info: cusp_worldsheet_vec.png used on input line 387.
-(pdftex.def)             Requested size: 129.06366pt x 101.58597pt.
 
 Overfull \hbox (2.13672pt too wide) has occurred while \output is active
   []  
@@ -1668,7 +1695,17 @@ Overfull \hbox (2.13672pt too wide) has occurred while \output is active
 
 [12
 
- <./cusp_worldsheet_vec.png>]
+]
+LaTeX Font Info:    Try loading font information for U+dsrom on input line 594.
+
+ (/usr/local/texlive/2015/texmf-dist/tex/latex/doublestroke/Udsrom.fd
+File: Udsrom.fd 1995/08/01 v0.1 Double stroke roman font definitions
+)
+Overfull \hbox (47.14384pt too wide) in paragraph at lines 594--594
+[]  
+ []
+
+
 Overfull \hbox (2.13672pt too wide) has occurred while \output is active
   []  
  []
@@ -1676,17 +1713,7 @@ Overfull \hbox (2.13672pt too wide) has occurred while \output is active
 [13
 
 ]
-File: cusp_worldsheet_vec.png Graphic file (type png)
- <use cusp_worldsheet_vec.png>
-Package pdftex.def Info: cusp_worldsheet_vec.png used on input line 453.
-(pdftex.def)             Requested size: 153.64493pt x 120.93396pt.
-
-Overfull \hbox (20.40031pt too wide) in paragraph at lines 453--453
- [] 
- []
-
-
-Overfull \vbox (14.11685pt too high) detected at line 453
+Overfull \vbox (4.82195pt too high) detected at line 620
  []
 
 
@@ -1697,6 +1724,25 @@ Overfull \hbox (2.13672pt too wide) has occurred while \output is active
 [14
 
 ]
+Overfull \hbox (12.81332pt too wide) in paragraph at lines 674--674
+[]$[]$ 
+ []
+
+
+Overfull \hbox (12.78021pt too wide) in paragraph at lines 674--674
+ []
+ []
+
+
+Underfull \hbox (badness 1735) in paragraph at lines 674--674
+\T1/cmss/m/n/10.95 treat-able via MC tech-
+ []
+
+
+Overfull \vbox (5.20845pt too high) detected at line 674
+ []
+
+
 Overfull \hbox (2.13672pt too wide) has occurred while \output is active
   []  
  []
@@ -1704,13 +1750,12 @@ Overfull \hbox (2.13672pt too wide) has occurred while \output is active
 [15
 
 ]
-LaTeX Font Info:    Try loading font information for U+dsrom on input line 492.
+Overfull \hbox (12.03072pt too wide) in paragraph at lines 732--732
+[]$[]$  
+ []
 
- (/usr/local/texlive/2015/texmf-dist/tex/latex/doublestroke/Udsrom.fd
-File: Udsrom.fd 1995/08/01 v0.1 Double stroke roman font definitions
-)
-Overfull \hbox (47.14384pt too wide) in paragraph at lines 492--492
-[]  
+
+Overfull \vbox (4.06151pt too high) detected at line 732
  []
 
 
@@ -1721,7 +1766,17 @@ Overfull \hbox (2.13672pt too wide) has occurred while \output is active
 [16
 
 ]
-Overfull \vbox (4.82195pt too high) detected at line 518
+Overfull \hbox (6.4946pt too wide) in paragraph at lines 732--732
+ []$ 
+ []
+
+<markov.png, id=222, 560.45386pt x 242.8272pt>
+File: markov.png Graphic file (type png)
+ <use markov.png>
+Package pdftex.def Info: markov.png used on input line 732.
+(pdftex.def)             Requested size: 399.47777pt x 173.08286pt.
+
+Overfull \vbox (18.48213pt too high) detected at line 732
  []
 
 
@@ -1731,26 +1786,7 @@ Overfull \hbox (2.13672pt too wide) has occurred while \output is active
 
 [17
 
-]
-Overfull \hbox (12.81332pt too wide) in paragraph at lines 572--572
-[]$[]$ 
- []
-
-
-Overfull \hbox (12.78021pt too wide) in paragraph at lines 572--572
- []
- []
-
-
-Underfull \hbox (badness 1735) in paragraph at lines 572--572
-\T1/cmss/m/n/10.95 treat-able via MC tech-
- []
-
-
-Overfull \vbox (5.20845pt too high) detected at line 572
- []
-
-
+ <./markov.png>]
 Overfull \hbox (2.13672pt too wide) has occurred while \output is active
   []  
  []
@@ -1758,12 +1794,11 @@ Overfull \hbox (2.13672pt too wide) has occurred while \output is active
 [18
 
 ]
-Overfull \hbox (17.78062pt too wide) in paragraph at lines 630--630
-[]$[]$  
- []
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 823.
 
 
-Overfull \vbox (4.78093pt too high) detected at line 630
+Overfull \vbox (23.89452pt too high) detected at line 823
  []
 
 
@@ -1774,98 +1809,70 @@ Overfull \hbox (2.13672pt too wide) has occurred while \output is active
 [19
 
 ]
-Overfull \hbox (6.4946pt too wide) in paragraph at lines 630--630
- []$ 
+
+LaTeX Font Warning: Command \huge invalid in math mode on input line 850.
+
+
+LaTeX Font Warning: Command \huge invalid in math mode on input line 850.
+
+(./plot_coshcorr.tex) (./mx_vs_g_Lm4_2.tex)
+Overfull \hbox (21.92586pt too wide) in paragraph at lines 140--850
+[][] 
  []
 
-<markov.png, id=242, 560.45386pt x 242.8272pt>
-File: markov.png Graphic file (type png)
- <use markov.png>
-Package pdftex.def Info: markov.png used on input line 630.
-(pdftex.def)             Requested size: 399.47777pt x 173.08286pt.
 
-Overfull \vbox (22.3053pt too high) detected at line 630
+Underfull \hbox (badness 10000) in paragraph at lines 140--850
+
  []
 
 
-Overfull \hbox (2.13672pt too wide) has occurred while \output is active
-  []  
+Overfull \hbox (21.10326pt too wide) in paragraph at lines 140--850
+[] 
+ []
+
+
+Overfull \vbox (38.10461pt too high) detected at line 850
  []
 
 [20
 
- <./markov.png>]
-Overfull \hbox (2.13672pt too wide) has occurred while \output is active
-  []  
+] (./c_fit.tex) (./Slat-c_g.tex)
+Overfull \hbox (14.14215pt too wide) in paragraph at lines 1875--883
+ [] 
+ []
+
+
+Overfull \vbox (20.76509pt too high) detected at line 883
  []
 
 [21
 
-]
-
-LaTeX Font Warning: Command \small invalid in math mode on input line 721.
-
-
-Overfull \vbox (22.77322pt too high) detected at line 721
- []
-
-
-Overfull \hbox (2.13672pt too wide) has occurred while \output is active
-  []  
+] (./f_prime_Lm4_andLm6.tex)
+Overfull \vbox (21.03542pt too high) detected at line 893
  []
 
 [22
 
 ]
-
-LaTeX Font Warning: Command \huge invalid in math mode on input line 747.
-
-
-LaTeX Font Warning: Command \huge invalid in math mode on input line 747.
-
-(./plot_coshcorr.tex) (./mx_vs_g_Lm4_2.tex)
-Overfull \hbox (21.92586pt too wide) in paragraph at lines 140--747
-[][] 
- []
-
-
-Overfull \hbox (21.10326pt too wide) in paragraph at lines 140--747
-[] 
+Overfull \hbox (2.13672pt too wide) has occurred while \output is active
+  []  
  []
 
 [23
 
-] (./c_fit.tex) (./Slat-c_fix.tex)
-Overfull \hbox (6.44333pt too wide) in paragraph at lines 168--780
- [] 
+]
+Overfull \hbox (2.13672pt too wide) has occurred while \output is active
+  []  
  []
 
 [24
 
-] (./Slat-c_g.tex) [25
-
-] (./f_prime_Lm4_andLm6.tex) [26
-
 ]
 Overfull \hbox (2.13672pt too wide) has occurred while \output is active
   []  
  []
 
-[27
-
-]
-Overfull \hbox (2.13672pt too wide) has occurred while \output is active
-  []  
- []
-
-[28
-
-]
-Overfull \hbox (2.13672pt too wide) has occurred while \output is active
-  []  
- []
-
-[29
+[25
 
 ]
 \tf@nav=\write8
@@ -1877,29 +1884,29 @@ Overfull \hbox (2.13672pt too wide) has occurred while \output is active
 \tf@snm=\write10
 \openout10 = `template.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 850.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 850.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 953.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 953.
  (./template.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 850.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 850.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 953.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 953.
 Package rerunfilecheck Info: File `template.out' has not changed.
-(rerunfilecheck)             Checksum: 69833789B6C8AF806581914F1A4025E3;396.
+(rerunfilecheck)             Checksum: 59B9FB40A325C7D879C2B460AE054AC6;410.
 
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 850.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 953.
  )
 (\end occurred when \unless\ifcsname on line 71 was incomplete) 
 Here is how much of TeX's memory you used:
- 34379 strings out of 493089
- 794113 string characters out of 6134842
- 1467585 words of memory out of 5000000
- 37054 multiletter control sequences out of 15000+600000
+ 34216 strings out of 493089
+ 790767 string characters out of 6134842
+ 1442613 words of memory out of 5000000
+ 36902 multiletter control sequences out of 15000+600000
  36865 words of font info for 109 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 66i,23n,112p,944b,2614s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 66i,23n,112p,944b,2688s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texl
 ive/2015/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/local/texliv
 e/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb></usr/local/texliv
@@ -1944,10 +1951,10 @@ fsx1095.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfs
 x1200.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfsx1
 440.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfsx248
 8.pfb>
-Output written on template.pdf (29 pages, 2461206 bytes).
+Output written on template.pdf (25 pages, 2460756 bytes).
 PDF statistics:
- 458 PDF objects out of 1000 (max. 8388607)
- 357 compressed objects within 4 object streams
- 68 named destinations out of 1000 (max. 500000)
+ 434 PDF objects out of 1000 (max. 8388607)
+ 337 compressed objects within 4 object streams
+ 60 named destinations out of 1000 (max. 500000)
  152 words of extra memory for PDF output out of 10000 (max. 10000000)
 
